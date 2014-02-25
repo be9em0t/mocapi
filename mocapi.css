@@ -1,0 +1,115 @@
+/*generic links*/
+a:link {color:#FF0000;}      /* unvisited link */
+a:visited {color:#00FF00;}  /* visited link */
+a:hover {color:#FF00FF;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+/* nav links */
+nav a:link{ 
+color:black;
+text-decoration:none;
+}
+nav a:visited{ 
+color:black;
+text-decoration:none;
+}
+nav a:hover{
+color:black;
+text-decoration:none;
+}
+nav a:active{
+color:black;
+text-decoration:none;
+}
+
+
+/* Compatibility */
+body
+{
+margin:0;
+padding:0;
+}
+
+/* Fonts */
+h2 {font-size: 18pt; font-variant: normal; font-weight: normal; /*Logo*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
+h3 {font-size: 18pt; font-variant: normal; font-weight: bold; 	/*Content Heading*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
+h4 {font-size: 11pt; font-variant: normal; font-weight: normal; /*navMenu*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+h5 {font-size: 12pt; font-variant: normal; font-weight: bold; /*Content em*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
+
+/* NavMenu */
+nav {
+color:black; 
+position:relative; 
+top:25px; left: 0px; 
+width: 100%; height: 60px;
+}
+
+.vertAligh {
+  display:inline-block;
+  vertical-align:middle;
+  left:0px;
+}
+
+.vertAlighName {
+  display:inline-block;
+  vertical-align:middle;
+  width:310;
+}
+	/* bar+name */
+	.vertLine {
+	float: left;
+	background:black; 
+	position:relative; 
+	vertical-align:midle;
+	margin-top:auto; margin-bottom:auto;
+	left:0px;
+	width: 4px; height: 50px;
+	}
+	.vertLine:hover {
+	height: 4px;
+	}
+
+	/* navMenu */
+	ul li {
+	display: inline;
+	}
+
+	.navMenu {	
+	display:inline-block;
+	margin-right:2px;
+	position:relative; 
+	top:0px; left:0px; 
+	width:136px; height:50px;
+	}
+	
+	.navMenu .navLine {
+	background:black; 
+	position:relative; 
+	margin:0; top:-50px;
+	width:136px; height:1px;
+	}
+	.navMenu:hover .navLine {
+	height: 4px;
+	}
+	.navMenu .navLineActive {
+	background:black; 
+	position:relative; 
+	margin:0; top:-50px;
+	width:136px; height:4px;
+	}
+	
+	.marginSpace {
+	width:20px; height:50px;
+	}
+
+	.content {
+	position:relative; 
+	margin-left:auto; margin-right:auto;margin-top:200px; 
+	width:940px; height:800px;
+	}
+
+
