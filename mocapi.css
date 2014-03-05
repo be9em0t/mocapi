@@ -28,6 +28,7 @@ body
 {
 margin:0;
 padding:0;
+background:#F3F3F3;
 }
 
 /* Fonts */
@@ -108,8 +109,15 @@ width: 100%; height: 60px;
 
 	.content {
 	position:relative; 
-	margin-left:auto; margin-right:auto;margin-top:200px; 
+	margin-left:385; margin-right:auto;margin-top:200px; 
+	width:555px; height:800px;
+	/*width:940px; height:800px;*/
+	
+	.underConstr {
+	position:relative; 
+	margin-left:auto; margin-right:auto;margin-bottom:0px; 
 	width:940px; height:800px;
+	/*width:940px; height:800px;*/
 	}
 
 
