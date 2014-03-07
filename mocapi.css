@@ -1,123 +1,70 @@
 /*generic links*/
-a:link {color:#FF0000;}      /* unvisited link */
-a:visited {color:#00FF00;}  /* visited link */
-a:hover {color:#FF00FF;}  /* mouse over link */
-a:active {color:#0000FF;}  /* selected link */
+a:link {color:#FF0000;}      /* unvisited link RED */
+a:visited {color:#00FF00;}  /* visited link GREEN */
+a:hover {color:#FF00FF;}  /* mouse over link MAGENTA*/
+a:active {color:#0000FF;}  /* selected link BLUE*/
 
-/* nav links */
-nav a:link{ 
-color:black;
-text-decoration:none;
-}
-nav a:visited{ 
-color:black;
-text-decoration:none;
-}
-nav a:hover{
-color:black;
-text-decoration:none;
-}
-nav a:active{
-color:black;
-text-decoration:none;
-}
-
+nav a {text-decoration:none;}
 
 /* Compatibility */
 body
 {
 margin:0;
 padding:0;
-background:#F3F3F3;
+background:#F3F3F3;   /*#F3F3F3;*/
 }
+
+
+
+/* UNIFIED COLORS */
+/* default #mocapiMenu link color */
+#mocapiMenu a:link, #mocapiMenu a:visited, #mocapiMenu a:hover {color:#8C8C8C;}
+.menuLine, .menuLineActive {background:#8C8C8C;}
+
+/* active #mocapiMenu link color */
+#mocapiMenu a:active {color: black;}
+.menuTab:active .menuLine, .menuTab:active .menuLineActive {background:black;}
+
+/* #mocapiName link color */
+#mocapiName #nameText {color:black;}
+/*#mocapiName #nameText:hover {color:#8C8C8C;}*/
+
 
 /* Fonts */
 h2 {font-size: 18pt; font-variant: normal; font-weight: normal; /*Logo*/
 	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
 h3 {font-size: 18pt; font-variant: normal; font-weight: bold; 	/*Content Heading*/
 	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
-h4 {font-size: 11pt; color:#cccccc; font-variant: normal; font-weight: normal; /*navMenu*/
-	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
-h5 {font-size: 12pt; font-variant: normal; font-weight: bold; /*Content em*/
-	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
+h4 {font-size: 11pt;  font-variant: normal; font-weight: normal; /*navMenu*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:300%;}
+h5 {font-size: 16pt; font-variant: normal; font-weight: normal; /*Slogan*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:180%;}
 
-/* NavMenu */
-nav {
-color:black; 
-position:relative; 
-top:25px; left: 0px; 
-width: 100%; height: 60px;
-}
+#centerField {
+background:linear-gradient(#e9e9e9, #F3F3F3); /*background:#e9e9e9;*/
+position:relative; margin-left:auto; margin-right:auto; margin-top:0px; 
+width:940px; height:800px;}
 
-.vertAligh {
-  display:inline-block;
-  vertical-align:middle;
-  left:0px;
-}
+/*Navigation block on top of page*/
+nav {display:inline-block; position:absolute; width:100%; top:20px;}
 
-.vertAlighName {
-  display:inline-block;
-  vertical-align:middle;
-  width:310;
-}
-	/* bar+name */
-	.vertLine {
-	float: left;
-	background:black; 
-	position:relative; 
-	vertical-align:midle;
-	margin-top:auto; margin-bottom:auto;
-	left:0px;
-	width: 4px; height: 50px;
-	}
-	.vertLine:hover {
-	height: 4px;
-	}
+	/* MocapiAnimation name*/
+	#mocapiName {display:inline-block;  position:absolute; left:20px; width:200;}
+	#nameVertLine {display:inline-block; background:black; vertical-align:middle; left:0px; width: 4px; height: 50px;}
+	#nameText {display:inline-block; text-align:left; vertical-align:middle;}
 
-	/* navMenu */
-	ul li {
-	display: inline;
-	}
+	#mocapiMenu {display:inline-block; position:absolute; top:-12px; right:20px; width:700px;}
+	#mocapiMenu ul {float:right;}
+	.menuTab {display:inline;}
+	.menuText {display:inline-block; position:relative; margin-right:2px;}
+	.menuLine {width:136px; height:1px;}
+	.menuTab:hover .menuLine {height: 3px;}
+	.menuLineActive {width:136px; height:3px;}	
 
-	.navMenu {	
-	display:inline-block;
-	margin-right:2px;
-	position:relative; 
-	top:0px; left:0px; 
-	width:136px; height:50px;
-	}
-	
-	.navMenu .navLine {
-	background:black; 
-	position:relative; 
-	margin:0; top:-50px;
-	width:136px; height:1px;
-	}
-	.navMenu:hover .navLine {
-	height: 4px;
-	}
-	.navMenu .navLineActive {
-	background:black; 
-	position:relative; 
-	margin:0; top:-50px;
-	width:136px; height:4px;
-	}
-	
-	.marginSpace {
-	width:20px; height:50px;
-	}
-
-	.content {
-	position:relative; 
-	margin-left:385; margin-right:auto;margin-top:200px; 
-	width:555px; height:800px;
-	/*width:940px; height:800px;*/
-	
-	.underConstr {
-	position:relative; 
-	margin-left:auto; margin-right:auto;margin-bottom:0px; 
-	width:940px; height:800px;
-	/*width:940px; height:800px;*/
-	}
+.slogan {display:inline-block; position:absolute; width:560px; height:300px; top:200px; right:20px;}
+#picTails{position:absolute; width:240px; height:569px; bottom:0px; right:0px; }
 
 
+footer {position: fixed; width:100%; height:30px; bottom: 0px; color:#8C8C8C;}
+#trademark {position:relative; margin-left:auto; margin-right:auto; margin-top:0px; width:940px;}
+#trademark p {text-align: left; text-indent:20px; font-size: 8pt; font-variant: normal; font-weight: normal; font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
