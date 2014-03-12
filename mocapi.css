@@ -6,15 +6,6 @@ a:active {color:#0000FF;}  /* selected link BLUE*/
 
 nav a {text-decoration:none;}
 
-/* Compatibility */
-body
-{
-margin:0;
-padding:0;
-background:#F3F3F3;   /*#F3F3F3;*/
-}
-
-
 /* UNIFIED COLORS */
 /* default #mocapiMenu link color */
 #mocapiMenu a:link, #mocapiMenu a:visited, #mocapiMenu a:hover {color:#8C8C8C;}
@@ -31,20 +22,37 @@ background:#F3F3F3;   /*#F3F3F3;*/
 
 /* Fonts */
 h2 {font-size: 18pt; font-variant: normal; font-weight: normal; /*Logo*/
-	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:130%;}
 h3 {font-size: 18pt; font-variant: normal; font-weight: bold; 	/*Content Heading*/
 	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
-h4 {font-size: 11pt;  font-variant: normal; font-weight: normal; /*navMenu*/
+h4 {font-size: 11pt;  font-variant: normal; font-weight: normal; 
 	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:300%;}
-h41 {font-size: 11pt;  font-variant: normal; font-weight: normal; /*navMenu*/
+
+h6 {font-size: 11pt;  font-variant: normal; font-weight: normal; position:relative; top:-20px;/*navMenu*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
+
+h41 {font-size: 11pt;  font-variant: normal; font-weight: normal; /* haiku */
 	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:200%;}
-h42 {font-size: 11pt;  font-variant: normal; font-weight: normal; /*navMenu*/
-	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:140%;}
+h42 {font-size: 11.5pt;  font-variant: normal; font-weight: normal; /*slogan*/
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:150%;}
+h43 {font-size: 10.5pt;  font-variant: normal; font-weight: normal; /*sideInfo */
+	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:160%;}
+
 h5 {font-size: 16pt; font-variant: normal; font-weight: normal; /*Slogan*/
 	font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:180%;}
 
+.grayText{color:#F3F3F3;}
+
+/* Compatibility */
+body
+{
+margin:0;
+padding:0;
+background:#F3F3F3;   /*#F3F3F3;*/
+}
+
 #centerField {
-background:background:#e9e9e9; /*linear-gradient(#e9e9e9, #F3F3F3); */
+/* background:orange; linear-gradient(#e9e9e9, #F3F3F3); */
 position:relative; margin-left:auto; margin-right:auto; margin-top:0px; 
 width:940px; height:800px;}
 
@@ -54,29 +62,36 @@ nav {display:inline-block; position:absolute; width:100%; top:20px;}
 	/* MocapiAnimation name*/
 	#mocapiName {display:inline-block;  position:absolute; left:20px; width:200;}
 	#nameVertLine {display:inline-block; background:black; vertical-align:middle; left:0px; width: 4px; height: 50px;}
-	#nameText {display:inline-block; text-align:left; vertical-align:middle;}
+	#nameText {display:inline-block; text-align:left; vertical-align:middle; }
 
-	#mocapiMenu {display:inline-block; position:absolute; top:-12px; right:20px; width:700px;}
-	#mocapiMenu ul {float:right;}
-	.menuTab {display:inline;}
-	.menuText {display:inline-block; position:relative; margin-right:2px;}
-	.menuLine {width:136px; height:1px;}
-	.menuTab:hover .menuLine {height: 3px;}
-	.menuLineActive {width:136px; height:3px;}	
+	#mocapiMenu {display:inline-block; position:absolute; top:4px; right:20px; width:700px;}
+	#mocapiMenu ul {float:right; margin:0;}
+	
+	.menuTab {display:inline-block; position:relative; float:right; margin-left:8px; height:30px; top:22px; right:0px; }
+	.menuLink {display:inline-block; position:relative; width:136px; height:30px; top:0px; }
+	.menuLine {display:inline-block; position:absolute; top:0px; width:136px; height:1px;}
+	.menuTab:hover .menuLine {height:3px;}
+	.menuLineActive {display:inline-block; position:absolute; top:0px; width:136px; height:3px;}
 
-.slogan {display:inline-block; position:absolute; width:560px; height:300px; top:200px; right:20px;}
+.slogan {display:inline-block; position:absolute; width:568px; top:180px; left:352px;}
+.sloganSpacey {display:inline-block; position:absolute; width:568px; top:200px; left:352px;}
+
+#mocapiContact {display:inline-block; position:absolute; width:330px; height:220px; top:180px; left:20px;}
+#mocapiIntro {display:inline-block; position:absolute; width:250px; height:220px; top:180px; left:20px; text-align:justify;}
+.listNone {list-style-type:none;}
+.subheader {font-size: 11pt;  font-variant: normal; font-weight: normal; line-height:150%;}
 
 #picTails{position:absolute; width:202px; height:465px; bottom:30px; right:0px; 
 background:url(images/tails.png); background-size:100% 100%; background-repeat:no-repeat;}
 
-#picHeads{position:absolute; width:368px; height:495px; bottom:30px; left:0px; 
+#picHeads{position:absolute; width:350px; height:495px; bottom:30px; left:0px; 
 background:url(images/heads.png); background-size:100% 100%; background-repeat:no-repeat;}
 
-footer {position: fixed; width:100%; height:30px; bottom: 0px; color:#8C8C8C;}
+footer {position: fixed; width:100%; height:30px; bottom: 0px; color:#8C8C8C; background:#F3F3F3;}
 	#constr {position:relative; margin-left:auto; margin-right:auto; margin-top:0px; width:940px; height:30px; top:-50px; background:orange;}
 	#trademark {position:relative; margin-left:auto; margin-right:auto; margin-top:0px; width:940px;}
 	#trademark p {text-align: left; text-indent:20px; font-size: 8pt; font-variant: normal; font-weight: normal; font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif; line-height:100%;}
 
-.form_temp{display:inline-block; position:absolute; width:621px; height:658px; top:200px; left:354px; 
-background:url(images/form_placeholder.jpg); background-size:100% 100%; background-repeat:no-repeat;}
+.formContact{display:inline-block; position:absolute; width:568px; top:180px; left:352px;}
 
+/*background:url(images/form_placeholder.jpg); background-size:100% 100%; background-repeat:no-repeat; */
