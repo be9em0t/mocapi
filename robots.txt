@@ -3,6 +3,6 @@
 
 User-agent: *
 Crawl-Delay: 10
-Disallow: /OFFcontact.html
+Disallow: /contact.html
 Disallow: /images
 
