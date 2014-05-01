@@ -1,8 +1,14 @@
 /*generic links*/
-a:link {color:#FF0000;}      /* unvisited link RED */
-a:visited {color:#00FF00;}  /* visited link GREEN */
-a:hover {color:#FF00FF;}  /* mouse over link MAGENTA*/
-a:active {color:#0000FF;}  /* selected link BLUE*/
+/* a:link {color:#F3F3F3;}      unvisited link RED */
+/* a:visited {color:#00FF00;}  visited link GREEN */
+/* a:hover {color:#FF00FF;}   mouse over link MAGENTA*/
+/* a:active {color:#0000FF;}  selected link BLUE*/
+
+a:link {color:black;}      /* unvisited link RED */
+a:visited {color:black;}  /* visited link GREEN */
+a:hover {color:#8C8C8C;}  /* mouse over link MAGENTA*/
+a:active {color:black;}  /* selected link BLUE*/
+a {text-decoration:none;}
 
 nav a {text-decoration:none;}
 
