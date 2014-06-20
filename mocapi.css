@@ -8,7 +8,7 @@ a:link {color:black;}      /* unvisited link RED */
 a:visited {color:black;}  /* visited link GREEN */
 a:hover {color:#8C8C8C;}  /* mouse over link MAGENTA*/
 a:active {color:black;}  /* selected link BLUE*/
-a {text-decoration:none;}
+/*a {text-decoration:none;}*/
 
 nav a {text-decoration:none;}
 
